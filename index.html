@@ -12,14 +12,16 @@
   <!-- Favicons -->
   
   <!-- icono de pagina -->
-  <link href="assets/img/logoHoja-removebg-preview.ico" rel="icon">
-  <link href="assets/img/logoHoja-removebg-preview.ico" rel="apple-touch-icon">
+  <link href="assets/img/Isotip_gradiente_azul.png" rel="icon">
+  <link href="assets/img/Isotip_gradiente_azul.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-
+	
+	
+<script src="https://kit.fontawesome.com/9e5de66bf3.js" crossorigin="anonymous"></script>
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,16 +43,7 @@
 </head>
 
 <body>
-   <header class="header navbar-fixed-top">
-            <!-- Navbar -->
-        <!--========== END HEADER ==========-->
-
-        <!--========== SLIDER ==========-->
-        <div class="promo-block parallax-window" data-parallax="scroll" data-image-src="assets/img/1920x1080/01.jpg">
-                    </div>
-                <!--// end row -->
-        <!--========== SLIDER ==========-->
-    
+  <div class="wrap">
     <section id="hero">
       <div class="hero-container" data-aos="fade-up">
         <h1>ODES</h1>
@@ -59,24 +52,41 @@
        <!--  <a href="#about" class="btn-get-started scrollto">Get Started</a> -->
       </div>
     </section><!-- End Hero -->
-
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex align-items-center justify-content-between">
 
         <div class="logo">
-          <h1 class="text-light"><a href="index.html"><span></span></a></h1>
-             <img src="assets/img/logo.png"  alt="...">
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-        </div>
+                            <a class="logo-wrap" href="#hero">
+                                <img class="logo-img logo-img-active" src="assets/img/horizontal_SB_color.png">
+                            </a>
+                        </div>
+
 
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
             <li><a class="nav-link scrollto" href="#proyecto">Proyecto</a></li>
-            <li><a class="nav-link scrollto" href="#aplicaciones">Observatorios</a></li>
+            <li class="dropdown"><a class="nav-link scrollto" href="#aplicaciones"><span>Observatorios</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li class="dropdown"><a href="#aplicaciones"><span>Escala nacional</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#ODES-Unidades">ODES-Unidades</a></li>
+                    <li><a href="#ODES-Estaciones">ODES-Estaciones</a></li>
+                    <li><a href="#ODES-Repositorio">ODES-Repositorio</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#aplicaciones2"><span>Cuenca del Aconcagua</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#ODES-Socioeconomico">ODES-Socioeconómico</a></li>
+                    <li><a href="#ODES-Huertos">ODES-Huertos</a></li>
+                    <li><a href="#ODES-Biodiversidad">ODES-Biodiversidad</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
             <li><a class="nav-link scrollto" href="#instituciones">Instituciones</a></li>
+            <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
             <li><a class="nav-link scrollto" href="#faq">Preguntas Frecuentes</a></li>
             <li><a class="nav-link scrollto" href="#contacto">Contacto</a></li>
           </ul>
@@ -85,6 +95,13 @@
 
       </div>
     </header><!-- End Header -->
+        <!--========== SLIDER ==========-->
+      
+                <!--// end row -->
+        <!--========== SLIDER ==========-->
+    
+   
+    <!-- ======= Header ======= -->
 
     <main id="main">
 
@@ -120,18 +137,18 @@
       <section id="aplicaciones" class="features">
             <div class="container">
               <div class="section-title" data-aos="fade-down">
-               <h2>Observatorios</h2>
+               <h2>Observatorios nacionales</h2>
                </div>
   
                 <div class="row justify-content-center align-items-center">
                 
                 <div class="col-lg-4 col-md-6 col-6">
-                <div class="card" data-aos="fade-up">
-                 <img src="assets/img/unidades.jpg" class="card-img-top" alt="...">
+                <div id="ODES-Unidades" class="card" data-aos="fade-up">
+                 <img src="assets/img/ODES-Unidades.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                   
                     <h5 class="card-title"><a>ODES-Unidades</a></h5>
-                    <p class="card-text">El observatorio por unidades entrega información climática e indicadores de sequía a distintas escalas territoriales de unidades político administrativas y de cuenca. Además, se podrá generar un informe con la evolución de estas variables en el tiempo. </p><br><br>
+                    <p class="card-text">El observatorio por unidades entrega información climática e indicadores de sequía a distintas escalas territoriales de unidades político administrativas y de cuenca. Además, se podrá generar un informe con la evolución de estas variables en el tiempo por unidad seleccionada. </p><br><br>
                     <a href="https://www.google.com" class="buttonApp1">Ir a ODES-Unidades  </a>
                     <p class="card-text"><small class="text-body-secondary">Última actualización 27-04-2023</small></p>
                   </div>
@@ -139,25 +156,75 @@
               </div>
               
               <div class="col-lg-4 col-md-6 col-6">
-              <div class="card" data-aos="fade-up" data-aos-delay="150">
-                <img src="assets/img/estaciones2.png" class="card-img-top" alt="...">
+              <div id="ODES-Estaciones" class="card" data-aos="fade-up" data-aos-delay="150">
+                <img src="assets/img/ODES-Estaciones.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
            
                   <h5 class="card-title"><a >ODES-Estaciones</a></h5>
                   <p class="card-text">El observatorio de estaciones permite visualizar y descargar la trayectoría de variables climáticas e indicadores de sequía para las estaciones disponibles con datos cercanos al tiempo real. El mapa permitirá visualizar que estaciones están en condición de sequía.                   </p><br><br>
-                   <a href="https://www.github.com" class="buttonApp2">Ir a ODES-Estaciones</a>
+                   <a href="https://www.github.com" class="buttonApp4">Ir a ODES-Estaciones</a>
+                        <p class="card-text"><small class="text-body-secondary">Última actualización 27-04-2023</small></p>
+                </div>
+              </div>
+            </div>
+                 <div class="col-lg-4 col-md-6 col-6">
+              <div id="ODES-Repositorio" class="card" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/img/ODES-Repositorio.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+           
+                  <h5 class="card-title"><a >ODES-Repositorio</a></h5>
+                  <p class="card-text">El observatorio de estaciones permite visualizar y descargar la trayectoría de variables climáticas e indicadores de sequía para las estaciones disponibles con datos cercanos al tiempo real. El mapa permitirá visualizar que estaciones están en condición de sequía.                   </p><br><br>
+                   <a href="https://www.github.com" class="buttonApp2">Ir a ODES-Repositorio</a>
+                        <p class="card-text"><small class="text-body-secondary">Última actualización 27-04-2023</small></p>
+                </div>
+              </div>
+            </div>
+                
+                 </div>
+      </div>
+      </section><!-- End Features Section -->
+
+ <section id="aplicaciones2" class="features">
+            <div class="container">
+              <div class="section-title" data-aos="fade-down">
+               <h2>Observatorios de la cuenca del Aconcagua</h2>
+               </div>
+  
+                <div class="row justify-content-center align-items-center">
+                
+              
+                 <div class="col-lg-4 col-md-6 col-6">
+              <div id="ODES-Socioeconomico" class="card" data-aos="fade-up" data-aos-delay="150">
+                <img src="assets/img/Aconcagua1.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+           
+                  <h5 class="card-title"><a >ODES-Socioeconómico</a></h5>
+                  <p class="card-text">El observatorio socioeconómico de la cuenca del Aconcagua muestra el impacto que ha tenido la sequía para los distintos actores locales. Las variables que se consideraron para dimensionar el impacto fueron variable1 variable1 variable1. variable1 variable1 variable1.</p><br><br>
+                   <a href="https://www.github.com" class="buttonApp5">Ir a ODES-Socioeconómico</a>
+                        <p class="card-text"><small class="text-body-secondary">Última actualización 27-04-2023</small></p>
+                </div>
+              </div>
+            </div>
+                 <div class="col-lg-4 col-md-6 col-6">
+              <div id="ODES-Huertos" class="card" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/img/Aconcagua.JPG" class="card-img-top" alt="...">
+                <div class="card-body">
+           
+                  <h5 class="card-title"><a >ODES-Huertos</a></h5>
+                  <p class="card-text">El observatorio de huertos permite visualizar y descargar la trayectoría de variables en estaciones ubicadas a lo largo de la cuenca del Aconcagua. Las variables contempladas incluyen evapotranspiración, temperatura y humedad del suelo, indicadores de sequía.               </p><br><br>
+                   <a href="https://www.github.com" class="buttonApp3">Ir a ODES-Huertos</a>
                         <p class="card-text"><small class="text-body-secondary">Última actualización 27-04-2023</small></p>
                 </div>
               </div>
             </div>
              <div class="col-lg-4 col-md-6 col-6">
-              <div class="card" data-aos="fade-up" data-aos-delay="300">
-                <img src="assets/img/unidades.jpg" class="card-img-top" alt="...">
+              <div id="ODES-Biodiversidad" class="card" data-aos="fade-up" data-aos-delay="450">
+                <img src="assets/img/Aconcagua2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
            
                   <h5 class="card-title"><a >ODES-Biodiversidad</a></h5>
-                  <p class="card-text">El observatorio de Biodiversidad permite visualizar y descargar la trayectoría de variables climáticas e indicadores de sequía para las estaciones disponibles con datos cercanos al tiempo real. El mapa permitirá visualizar que estaciones están en condición de sequía.                   </p><br><br>
-                   <a href="https://www.github.com" class="buttonApp3">Ir a ODES-Biodiversidad</a>
+                  <p class="card-text">El observatorio de biodiversidad muestra una caracterización de la flora y vegetación de diversos sitios de la cuenca del Aconcagua. Se utilizó la metodología de parcelas y transectos para estimar la composición y estrucura de las comunidades vegetales en estudio.                    </p><br><br>
+                   <a href="https://www.github.com" class="buttonApp6">Ir a ODES-Biodiversidad</a>
                         <p class="card-text"><small class="text-body-secondary">Última actualización 27-04-2023</small></p>
                 </div>
               </div>
@@ -165,7 +232,6 @@
                  </div>
       </div>
       </section><!-- End Features Section -->
-
 
       <!-- ======= Clients Section ======= -->
       <section id="instituciones" class="clients">
@@ -177,43 +243,195 @@
           <div class="row">
 
             <div class="col-lg-4 col-md-4 col-6" style="text-align: center;">
-              <a title="" href="https://hemera.umayor.cl/">
-              <img src="assets/img/LOGO_ALTA_CON_FONDO.jpg" class="img-fluid" alt="Hémera">
-                </a>
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-6" style="text-align: center;"  display: "flex" align-items:"center" justify-content:"center">
-              <a title="" href="https://cem.umayor.cl/">
-              <img src="assets/img/CENTRO-MODELACION-COLOR.png" class="img-fluid" alt="CEM"  data-aos-delay="100" >
+              <a title="" href="https://www.umayor.cl/">
+              <img src="assets/img/logoUM2022_400.png" class="img-fluid" alt="Hémera">
                 </a>
             </div>
 
             <div class="col-lg-4 col-md-4 col-6">
               <a title="" href="https://www.minagri.gob.cl/">
-              <img src="assets/img/Color_Minagri.png" class="img-fluid" alt=""  data-aos-delay="200">
+              <img src="assets/img/Color_Minagri_400.png" class="img-fluid" alt=""  data-aos-delay="200">
                 </a>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-6">
+              <a title="" href="https://www.wsl.ch/en/">
+              <img src="assets/img/logoWSL_400.png" class="img-fluid" alt="" data-aos-delay="500"></a>
             </div>
 
             <div class="col-lg-4 col-md-4 col-6">
                <a title="" href="https://www.upla.cl/portada/">
               <img src="assets/img/logoupla.png" class="img-fluid" alt=""  data-aos-delay="300"></a>
             </div>
+            
+            <div class="col-lg-4 col-md-4 col-6" style="text-align: center;"  display: "flex" align-items:"center" justify-content:"center">
+              <a title="" href="https://www.uss.cl//">
+              <img src="assets/img/ESCUDO-USS_Horizontal_color.svg" class="img-fluid" alt="CEM"  data-aos-delay="100" >
+                </a>
+            </div>
+
 
             <div class="col-lg-4 col-md-4 col-6">
               <a title="" href="https://www.education.gov.za/unescoza/Home.aspx">  
-              <img src="assets/img/natcom_south_africa_en-removebg-preview.png" class="img-fluid" alt="" data-aos-delay="400"></a>
+              <img src="assets/img/nueva-universidad-de-ohiggins.png" class="img-fluid" alt="" data-aos-delay="400"></a>
             </div>
 
-            <div class="col-lg-4 col-md-4 col-6">
-              <a title="" href="https://www.wsl.ch/en/">
-              <img src="assets/img/logoWSL.png" class="img-fluid" alt="" data-aos-delay="500"></a>
-            </div>
 
           </div>
 
         </div>
       </section><!-- End Clients Section -->
 
+         <!-- ======= Team Section ======= -->
+      <section id="team" class="team">
+        <div class="container">
+
+          <div class="section-title" data-aos="fade-down">
+            <h2>Equipo</h2>
+          </div>
+
+          <div class="row">
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Francisco Zambrano</h4>
+                    <span>Director del proyecto, encargado de la gestión y coordinación de aspectos administrativos y técnicos.</span>
+                    
+                  </div>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google"></i></a>
+                    <a href=""><i class="fa-brands fa-researchgate"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-md-0">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Dylan Craven</h4>
+                    <span>Director alterno, </span>
+                  </div>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0" data-wow-delay="0.2s">
+              <div class="member" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>William Anderson</h4>
+                    <span>CTO</span>
+                  </div>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0" data-wow-delay="0.3s">
+              <div class="member" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Amanda Jepson</h4>
+                    <span>Accountant</span>
+                  </div>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+               <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0" data-wow-delay="0.3s">
+              <div class="member" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Amanda Jepson</h4>
+                    <span>Accountant</span>
+                  </div>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+               <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0" data-wow-delay="0.3s">
+              <div class="member" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Amanda Jepson</h4>
+                    <span>Accountant</span>
+                  </div>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+      <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0" data-wow-delay="0.3s">
+              <div class="member" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Amanda Jepson</h4>
+                    <span>Accountant</span>
+                  </div>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+                  <div class="col-xl-3 col-lg-4 col-md-6 mt-4 mt-lg-0" data-wow-delay="0.3s">
+              <div class="member" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Amanda Jepson H</h4>
+                    <span>Accountant</span>
+                  </div>
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google"></i></a>
+                    <a href=""><i class="fa-brands fa-researchgate"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section><!-- End Team Section -->
    
       <!-- ======= F.A.Q Section ======= -->
       <section id="faq" class="faq">

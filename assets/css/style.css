@@ -1,5 +1,5 @@
 /**
-* Template Name: Plato
+* Template Name: Plato 
 * Updated: Mar 10 2023 with Bootstrap v5.2.3
 * Template URL: https://bootstrapmade.com/plato-responsive-bootstrap-website-template/
 * Author: BootstrapMade.com
@@ -7,7 +7,29 @@
 */
 
 /*--------------------------------------------------------------
-# General
+# Modificado para pagina web odes observatorio de sequia
+
+Colores de marca
+#68B47D verde logo
+#7EC07F verde agua
+#03674E verde oscuro
+#49A671 verde
+
+#1F0E68 azul logo
+#04559F azul
+#048ABF azul claro
+#048ABF celeste
+
+#962C0C rojo tierra
+#A63E26 rojo
+#AB4924 naranjo
+#9A692E cafe
+
+#E8AF47 amarillo
+#F2A74B mostaza
+#F7ECC9 amarillo claro
+#F2EDD0 amarillo mas claro
+
 --------------------------------------------------------------*/
 body {
   font-family: "Raleway", sans-serif
@@ -42,7 +64,7 @@ a:hover {
 
 /* Estilos al pasar el cursor por encima del botón */
 .buttonApp1:hover {
-  background-color: #4B825B;
+  background-color: #03674E;
 }
 
 /* Estilos al presionar el botón */
@@ -78,7 +100,7 @@ a:hover {
 }
 
 .buttonApp3 {
-  background-color: #b5700e;
+  background-color: #F2A74B;
   display: inline-block;
   font-weight: 500;
   font-size: 16px;
@@ -100,9 +122,89 @@ a:hover {
 
 /* Estilos al pasar el cursor por encima del botón */
 .buttonApp3:hover {
-  background-color: #C18F49;
+  background-color: #AB4924;
 }
 
+
+.buttonApp4 {
+  background-color: #F2EDD0;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilos al pasar el cursor por encima del botón */
+.buttonApp4:hover {
+  background-color: #F2EDD0;
+}
+
+/* Estilos al presionar el botón */
+.buttonApp4:active {
+  background-color: #fff;
+}
+
+
+.buttonApp5 {
+  background-color: #9A692E;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilos al pasar el cursor por encima del botón */
+.buttonApp5:hover {
+  background-color: #9A692E;
+}
+
+/* Estilos al presionar el botón */
+.buttonApp5:active {
+  background-color: #fff;
+}
+
+
+.buttonApp6 {
+  background-color: #962C0C;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilos al pasar el cursor por encima del botón */
+.buttonApp6:hover {
+  background-color: #A63E26;
+}
+
+/* Estilos al presionar el botón */
+.buttonApp6:active {
+  background-color: #fff;
+}
 
 
 
@@ -158,7 +260,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
@@ -167,6 +269,9 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+
+
 #header {
   height: 70px;
   z-index: 997;
@@ -200,6 +305,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 70px;
 }
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -230,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0 10px 30px;
   font-size: 16px;
   font-weight: 500;
-  color: #000;
+  color: #68B47D;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -246,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #68b47d;
+  color: #1F0E68;
 }
 
 .navbar .dropdown ul {
@@ -271,7 +377,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 15px;
-  color: #444444;
+  color: #68B47D;
 }
 
 .navbar .dropdown ul a i {
@@ -281,7 +387,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #68b47d;
+  color: #1F0E68;
 }
 
 .navbar .dropdown:hover>ul {
@@ -303,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
   visibility: visible;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1440px) {
   .navbar .dropdown .dropdown ul {
     left: -90%;
   }
@@ -418,6 +524,16 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -429,6 +545,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   border-bottom: 1px solid #222;
 }
+
 
 #hero:before {
   content: "";
@@ -572,6 +689,37 @@ section {
   .section-title span {
     font-size: 38px;
   }
+}
+
+/*--------------------------------------------------------------
+# Promo block
+--------------------------------------------------------------*/
+.promo-block {
+  padding: 220px 0 130px;
+}
+
+.promo-block .promo-block-title {
+  font-family: Orbitron, sans-serif;
+  font-size: 70px;
+  color: #fff;
+  line-height: 1;
+}
+
+@media (max-width: 480px) {
+  .promo-block .promo-block-title {
+    font-size: 50px;
+  }
+}
+
+.promo-block .promo-block-text {
+  font-size: 25px;
+  color: #fff;
+}
+
+.promo-block .promo-block-divider {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 /*--------------------------------------------------------------
@@ -1339,7 +1487,7 @@ section {
 # F.A.Q
 --------------------------------------------------------------*/
 .faq {
-  background: #f3faf6;
+  background: #fff;
   padding: 60px 0;
 }
 
@@ -1384,7 +1532,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #a8dabc;
+  color: #68b47d;
 }
 
 .faq .faq-list .icon-show,
@@ -1409,7 +1557,7 @@ section {
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #4eb478;
+  color: #68b47d;
 }
 
 .faq .faq-list a.collapsed .icon-show {
